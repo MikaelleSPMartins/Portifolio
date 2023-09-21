@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+
+/* Configurações gerais */
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    
+}
+html,body{
+    background-color: #000 ;
+}
+
+/* Menu principal */
+#menu{
+    background: rgba(196, 196, 196, 0.11);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.452);
+    backdrop-filter: blur(15px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 70px;
+}
+
+#menu>ul{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Página inicial de apresentação */
+#apresentacao{
+    width: 100%;
+}
+#apresentacao>article{
+    padding: 150px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#apresentacao-foto{
+   justify-content: center;
+}
+
+#apresentacao-foto > img{
+    max-width:200px;
+}
+
+#apresentacao-texto  {
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+#apresentacao-texto > h1{
+    font-size: 2em;
+} 
+#apresentacao-texto >h2{
+    color: #F25244;
+    font-size: 1.5em;
+}
+#apresentacao-texto >p{
+    font-size: 1em;
+    
+}
+@media screen and (min-width:800px) {
+    article{
+        flex-direction: row-reverse;
+        justify-content: center;
+    }  
+    #apresentacao-foto > img{
+        max-width:280px;
+    }
+    #apresentacao-texto > h1{
+        font-size: 2.5em;
+    }
+    #apresentacao-texto >h2{
+        font-size: 2.0em;
+    }
+
+}    
+
+@media screen and (min-width:1025px) {
+    #apresentacao-texto > h1{
+        font-size: 3em;
+    }
+    #apresentacao-texto >h2{
+        font-size: 2.5em;
+    }
+    #apresentacao-foto > img{
+        max-width:350px;
+    }
+}
