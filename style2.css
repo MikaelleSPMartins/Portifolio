@@ -53,8 +53,8 @@ li > a{
    justify-content: center;
 }
 
-#apresentacao-foto > img{
-    max-width:200px;
+#apresentacao-foto > img{ max-width:200px;
+   
 }
 
 #apresentacao-texto  {
@@ -99,4 +99,7 @@ li > a{
     #apresentacao-foto > img{
         max-width:350px;
     }
+}
+#sobre-mim{
+ display: none;
 }
